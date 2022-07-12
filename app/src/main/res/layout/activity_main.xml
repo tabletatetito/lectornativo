@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Escanear documento" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_documento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:background="@color/fila"
+            android:text="Documento:" />
+
+        <TextView
+            android:id="@+id/value_documento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@color/fila"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_primer_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:layout_weight=".9"
+            android:text="Primer nombre:" />
+
+        <TextView
+            android:id="@+id/value_primer_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_segundo_nombre"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:background="@color/fila"
+            android:text="Segundo nombre:" />
+
+        <TextView
+            android:id="@+id/value_segundo_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/fila"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_primer_apellido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight=".9"
+            android:textSize="14dp"
+            android:text="Primer apellido:" />
+
+        <TextView
+            android:id="@+id/value_primer_apellido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_segundo_apellido"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:background="@color/fila"
+            android:text="Segundo apellido:" />
+
+        <TextView
+            android:id="@+id/value_segundo_apellido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@color/fila"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_fecha_nacimiento"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:text="Fecha nacimiento:" />
+
+        <TextView
+            android:id="@+id/value_fecha_nacimiento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_sexo"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:background="@color/fila"
+            android:text="Sexo:" />
+
+        <TextView
+            android:id="@+id/value_sexo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:background="@color/fila"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/text_direccion"
+                  android:layout_width="0dp"
+                  android:layout_weight=".9"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:text="Dirección:" />
+
+              <EditText
+                  android:id="@+id/value_direccion"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:gravity="center"
+                  android:textStyle="bold"
+                  android:text="" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/text_telefono"
+                  android:layout_width="0dp"
+                  android:layout_weight=".9"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:background="@color/fila"
+                  android:text="Teléfono:" />
+
+              <EditText
+                  android:id="@+id/value_telefono"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:gravity="center"
+                  android:background="@color/fila"
+                  android:textStyle="bold"
+                  android:inputType="number"
+                  android:text="" />
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/text_longitud"
+                  android:layout_width="0dp"
+                  android:layout_weight=".9"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:text="Longitud:" />
+
+              <TextView
+                  android:id="@+id/value_longitud"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:gravity="center"
+                  android:textStyle="bold"
+                  android:text="" />
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/text_latitud"
+                  android:layout_width="0dp"
+                  android:layout_weight=".9"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:background="@color/fila"
+                  android:text="Latitud:" />
+
+              <TextView
+                  android:id="@+id/value_latitud"
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:textSize="14dp"
+                  android:gravity="center"
+                  android:background="@color/fila"
+                  android:textStyle="bold"
+                  android:text="" />
+
+          </LinearLayout>
+
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/escanear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escanear" />
+
+      <Button
+          android:id="@+id/registrar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Registrar" />
+    </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
